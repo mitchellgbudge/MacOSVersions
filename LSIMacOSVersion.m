@@ -15,7 +15,8 @@
                      releaseDate:(NSString *)releaseDate {
     self = [super init];
     if(self != nil) {
-        
+        _codename = codename;
+        _releaseDate = releaseDate;
     }
     return self;
 }
