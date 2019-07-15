@@ -10,4 +10,15 @@
 
 @implementation LSIMacOSVersion
 
+
+- (instancetype)initWithCodename:(NSString *)codename
+                     releaseDate:(NSString *)releaseDate {
+    self = [super init];
+    if(self != nil) {
+        
+    }
+    return self;
+}
+
+
 @end
