@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LSIMacOSVersion.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    LSIMacOSVersion *version = [[LSIMacOSVersion alloc] initWithCodename:@"Panther" releaseDate:@"October 24, 2003"];
+    NSLog(@"My name is %@ and I'm %d years old.", @"Mitch", 24);
+    NSLog(@"%@ was released on %@.", version.codename, version.releaseDate);
 }
 
 
